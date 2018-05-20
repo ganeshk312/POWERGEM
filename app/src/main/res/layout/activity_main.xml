@@ -25,65 +25,68 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:fontFamily="cursive"
-        android:paddingTop="8dp"
         android:paddingBottom="8dp"
+        android:paddingTop="8dp"
         android:text="You have NO gems"
-android:textColor="@android:color/black"
         android:textAlignment="center"
+        android:textColor="@android:color/black"
         android:textSize="32dp" />
+
     <TextView
+        android:id="@+id/finalMsg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/stone"
-        android:text="Congo Mighty THANOS...\nYou discovered all the stones!!!\nGENIUS"
-        android:id="@+id/finalMsg"
-        android:textStyle="bold"
-        android:textColor="@android:color/black"
-        android:background="@android:color/holo_purple"
-        android:textSize="16dp"
         android:layout_margin="8dp"
+        android:background="@android:color/holo_purple"
         android:gravity="center"
-        android:visibility="invisible"/>
+        android:text="Congo Mighty THANOS...\nYou discovered all the stones!!!\nGENIUS"
+        android:textColor="@android:color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:layout_below="@id/finalMsg"
-
         android:layout_margin="5dp"
-        >
+
+        android:orientation="vertical">
+
         <TextView
+            android:id="@+id/head"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Stones you Retrived:"
             android:textSize="28dp"
-            android:visibility="invisible"
-            android:id="@+id/head"
             android:textStyle="bold"
-            />
+            android:visibility="invisible" />
+
         <TextView
+            android:id="@+id/List"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
 
+            android:layout_marginTop="5dp"
             android:textSize="18dp"
-            android:id="@+id/List"
 
 
             />
     </LinearLayout>
-<Button
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentBottom="true"
-    android:layout_alignParentRight="true"
-    android:layout_margin="16dp"
-    android:text="RESET"
-    android:textStyle="bold"
-    style="@style/Widget.AppCompat.TextView.SpinnerItem"
-    android:background="@android:color/holo_red_dark"
-    android:textColor="@android:color/white"
-    android:onClick="reset"/>
+
+    <Button
+        style="@style/Widget.AppCompat.TextView.SpinnerItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        android:background="@android:color/holo_red_dark"
+        android:onClick="reset"
+        android:text="RESET"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
 </RelativeLayout>
 
 
